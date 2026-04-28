@@ -214,11 +214,11 @@ class FlightControllerApp(QMainWindow):
                 self.log("Ошибка: устройство не подключено")
     
     def on_data_received(self, data):
-        """Обработчик получения данных""" 
+        """Обработчик получения данных"""
         self.log(data)
     
     def on_connection_status(self, is_connected):
-        """Обработчик изменения статуса подключения""" 
+        """Обработчик изменения статуса подключения"""
         if is_connected:
             self.log("Успешное подключение к устройству!")
             self.status_label.setText("Статус: Подключено")
